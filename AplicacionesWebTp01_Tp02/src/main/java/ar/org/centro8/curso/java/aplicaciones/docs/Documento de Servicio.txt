@@ -1,0 +1,65 @@
+URL Server: http://localhost:8089/server/webresources
+
+********************************************************************************
+Servicio Clientes
+URL: /clientes/v1
+********************************************************************************
+
+    Método save
+    URL: /save
+        Parametros de entrada: String nombre, String apellido, int edad
+        Parametro de salida: int id
+
+    Método remove
+    URL: /remove
+        Parametro de entrada: int id
+        Parametro de salida: true / false
+
+    Método getAll
+    URL: /all
+        Parametro de entrada: null
+        Parametro de salida: List<Cliente> en JSON.
+
+    Método getById
+    URL: /byId
+        Parametro de entrada: int id
+        Parametro de salida: Cliente en JSON.
+
+    Método getAlLikeApellido
+    URL: /likeApellido
+        Parametro de entrada: String apellido
+        Parametro de salida: List<Cliente> en JSON.
+
+
+********************************************************************************
+Servicio Articulos
+URL: articulos/v1
+********************************************************************************
+
+    Método save
+    URL: /save
+        Parametros de entrada:  String descripcion, Tipo tipo, String color, 
+                                String talle_num, int stock, int stockMin, 
+                                int stockMax, double costo, double precio, 
+                                Temporada temporada
+        Parametro de salida: int id
+
+    Método remove
+    URL: /remove
+        Parametro de entrada: int id
+        Parametro de salida: true / false
+
+    Método getAll
+    URL: /all
+        Parametro de entrada: null
+        Parametro de salida: List<Articulo> en JSON.
+
+    Método getById
+    URL: /byId
+        Parametro de entrada: int id
+        Parametro de salida: Articulo en JSON.
+
+    Método getAlLikeDescripcion
+    URL: /likeDescripcion
+        Parametro de entrada: String descripcion
+        Parametro de salida: List<Articulo> en JSON.
